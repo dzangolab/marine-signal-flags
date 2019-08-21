@@ -1,0 +1,22 @@
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.flag-icon {
+  @extend .flag-icon-background;
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  line-height: 1rem;
+  &:before {
+    content: '\00a0';
+  }
+}
+
+@mixin flag-icon($char) {
+  .flag-icon-#{$char} {
+    background-image: url(#{$flag-icon-path}/#{$char}.svg);
+  }
+}

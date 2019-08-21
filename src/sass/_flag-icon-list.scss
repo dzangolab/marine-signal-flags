@@ -1,0 +1,42 @@
+@if variable-exists(include) {
+  @each $char in $include {
+    @include flag-icon($char);
+  }
+} @else {
+  @include flag-icon(a);
+  @include flag-icon(b);
+  @include flag-icon(c);
+  @include flag-icon(d);
+  @include flag-icon(e);
+  @include flag-icon(f);
+  @include flag-icon(g);
+  @include flag-icon(h);
+  @include flag-icon(i);
+  @include flag-icon(j);
+  @include flag-icon(k);
+  @include flag-icon(l);
+  @include flag-icon(m);
+  @include flag-icon(n);
+  @include flag-icon(o);
+  @include flag-icon(p);
+  @include flag-icon(q);
+  @include flag-icon(r);
+  @include flag-icon(s);
+  @include flag-icon(t);
+  @include flag-icon(u);
+  @include flag-icon(v);
+  @include flag-icon(w);
+  @include flag-icon(x);
+  @include flag-icon(y);
+  @include flag-icon(z);
+  @include flag-icon(0);
+  @include flag-icon(1);
+  @include flag-icon(2);
+  @include flag-icon(3);
+  @include flag-icon(4);
+  @include flag-icon(5);
+  @include flag-icon(6);
+  @include flag-icon(7);
+  @include flag-icon(8);
+  @include flag-icon(9);
+}
